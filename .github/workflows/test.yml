@@ -26,6 +26,6 @@ jobs:
             https://github.com/ahaoboy/easy-install/raw/refs/heads/main/dist-manifest/quickjs-ng.json
       - name: test
         run: |
-          qjs --version
+          qjs -h
           llrt --version
           tjs --version
