@@ -1,0 +1,1 @@
+Demo for [easy-setup](https://github.com/easy-install/easy-setup)
