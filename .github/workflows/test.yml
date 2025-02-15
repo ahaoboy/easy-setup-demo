@@ -35,6 +35,6 @@ jobs:
           llrt a.js
           tjs run a.js
 
-          qjs -h
+          qjs --help
           llrt --version
           tjs --version
