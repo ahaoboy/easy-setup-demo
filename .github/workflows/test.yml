@@ -26,6 +26,15 @@ jobs:
             https://github.com/ahaoboy/easy-install/raw/refs/heads/main/dist-manifest/quickjs-ng.json
       - name: test
         run: |
+          which qjs
+          which llrt
+          which tjs
+
+          echo "console.log(1)" >> a.js
+          qjs a.js
+          llrt a.js
+          tjs run a.js
+
           qjs -h
           llrt --version
           tjs --version
