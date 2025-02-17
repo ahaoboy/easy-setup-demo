@@ -20,14 +20,13 @@ jobs:
     steps:
       - uses: ahaoboy/easy-setup@v1
         with:
-          url: https://github.com/ahaoboy/easy-install
+          url: |-
+           https://github.com/ahaoboy/txiki.js-build
+           https://github.com/ahaoboy/easy-install/raw/refs/heads/main/dist-manifest/llrt.json
+           https://github.com/ahaoboy/easy-install/raw/refs/heads/main/dist-manifest/quickjs-ng.json
 
       - name: test
         run: |
-          ei https://github.com/ahaoboy/txiki.js-build
-          ei https://github.com/ahaoboy/easy-install/raw/refs/heads/main/dist-manifest/llrt.json
-          ei https://github.com/ahaoboy/easy-install/raw/refs/heads/main/dist-manifest/quickjs-ng.json
-
           which qjs
           which llrt
           which tjs
